@@ -1,0 +1,108 @@
+@import "bootstrap";
+
+body {
+    background-color: #FFFFAA;
+    color: #FFCC00;
+    font-family: Sintony;
+}
+
+.text {
+    background-color: #99ccff;
+    border-radius: 20px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border: 2px solid #66CCCC;
+    height: auto;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-family: Quicksand;
+    color: #FFFFFF;
+    text-shadow: 3px 2px 8px #6296F0;
+}
+
+h1 {
+    font-weight: normal;
+    text-shadow: 5px 2px 8px #6296F0;
+    text-align: center;
+    padding-top: 25px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    opacity: 0.8
+}
+
+p {
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 30px;
+    font-size: 25px;
+    font-family: Quicksand;
+}
+
+div.image {
+    background-image: url("banner.png");
+    width: 940px;
+    height: 198px;
+    border-radius: 15px;
+    border: 3.5px solid #3366CC;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    float: center;
+}
+
+.nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: center;
+    height: 50px;
+}
+
+.navbar {
+    float: center;
+}
+.navbar {
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 840px;
+}
+
+.navbar .nav > li > a {
+    color: #777777;
+    text-shadow: none;
+}
+
+.navbar .nav > li > a > img {
+    background-color: #99CCFF;
+    border-radius: 20px;
+    border: 2px solid #3399CC;
+    -webkit-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+    opacity: 0.75;
+}
+
+.navbar .nav > li > a > img:hover {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.brand {
+    font-family: Joti One;
+    color: #6699FF;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 170px;
+    display: block;
+}
