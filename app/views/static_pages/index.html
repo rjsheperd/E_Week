@@ -9,8 +9,20 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
   </head>
 
+  <script>
+      function load(obj) {
+          $("#loadedPage").load(obj.getAttribute("href").substring(1) + ".html");
+      }
+  </script>
+
   <body>
       <div class="image">
+          <h1>Weeklong engineering activities to enjoy the sunshine!</h1>
+      </div>
+      <div class="navbar">
+          <u1 class="nav">
+          <li><a href="#speaker" onclick="load(this)"><img src="img/speaker.png" title="Speaker"></a></li>
+          </u1>
       </div>
   </body>
 
