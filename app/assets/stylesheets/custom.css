@@ -23,9 +23,10 @@ body {
 
 h1 {
     font-weight: normal;
-    text-align: center;
+    text-align: left;
     padding-top: 175px;
-    margin-top: 175px;
+    margin-top: 230px;
+    margin-left: 40px;
     padding-bottom: 10px;
     font-size: 14px;
 }
@@ -43,7 +44,7 @@ div.image {
     background-repeat: no-repeat;
     background-position: center;
     width: 900px;
-    height: 400px;
+    height: 450px;
     border: 3.5px solid #3366CC;
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
@@ -76,7 +77,7 @@ div.image {
 }
 
 .navbar .nav > li > a {
-    color: #777777;
+    color: #3366CC;
     text-shadow: none;
 }
 
