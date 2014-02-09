@@ -1,0 +1,63 @@
+<link href='http://fonts.googleapis.com/css?family=Droid Sans' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://tympanus.net/Development/Arctext/js/jquery.arctext.js"></script>
+<script>
+	$().ready(function() {
+	$('#speakerCurve').arctext({radius: 55});
+	$('#profdevCurve').arctext({radius: 50});
+	$('#outreachCurve').arctext({radius: 60});
+	$('#meetCurve').arctext({radius: 50});
+	$('#eatCurve').arctext({radius: 55, dir: -1});
+	$('#profCurve').arctext({radius: 60});
+	$('#devCurve').arctext({radius: 60, dir: -1});
+	$('#compCurve').arctext({radius: 70});
+});
+
+function load(obj) {
+  $("#loadedPage").load(obj.getAttribute("href").substring(1) + ".html");
+}
+</script>
+
+<%= yield :head %>
+
+<div class="navbar" style="margin-left:600px;margin-top:-450px">
+  <u1 class="nav">
+    <li><a href="#speaker" onclick="load(this)"><img src="img/speaker.png">
+        <div id="speakerCurve" style="margin-top:-150px;margin-left:30px">S P E A K E R S</div>
+    </a></li>
+  </u1>
+</div>
+
+<div class="navbar" style="margin-left:250px;margin-top:50px">
+  <u1 class="nav">
+  <li><a href="#profdev" onclick="load(this)"><img src="img/profdev.png">
+      <div id="profCurve" style="margin-top:-150px;margin-left:25px">PROFESSIONAL</div>
+      <div id="devCurve" style="margin-top:105px;margin-left:25px">DEVELOPMENT</div>
+  </a></li>
+  </u1>
+</div>
+
+<div class="navbar" style="margin-left:850px;margin-top:100px">
+  <u1 class="nav">
+  <li><a href="#outreach" onclick="load(this)"><img src="img/speaker.png">
+      <div id="outreachCurve" style="margin-top:-149px;margin-left:22px">O U T R E A C H</div>
+  </a></li>
+  </u1>
+</div>
+
+<div class="navbar" style="margin-left:400px;margin-top:230px">
+  <u1 class="nav">
+  <li><a href="#meeteat" onclick="load(this)"><img src="img/speaker.png">
+      <div id="meetCurve" style="margin-top:-150px;margin-left:50px">M E E T</div>
+      <div id="eatCurve" style="margin-top:105px;margin-left:35px">A N D  E A T</div>
+  </a></li>
+  </u1>
+</div>
+
+<div class="navbar" style="margin-left:650px;margin-top:200px">
+  <u1 class="nav">
+  <li><a href="#comp" onclick="load(this)"><img src="img/speaker.png">
+      <div id="compCurve" style="margin-top:-148px;margin-left:30px">C O M P E T E</div>
+  </a></li>
+  </u1>
+</div>

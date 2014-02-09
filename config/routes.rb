@@ -1,7 +1,11 @@
 E4KWebsite::Application.routes.draw do
     root :to => 'static_pages#index'
 
-#    get '/speaker', :to => 'static_pages#speaker'
+    get '/speaker', :to => 'static_pages#speaker'
+    get '/profdev', :to => 'static_pages#profdev'
+    get '/outreach', :to => 'static_pages#outreach'
+    get '/meeteat', :to => 'static_pages#meeteat'
+    get '/comp', :to => 'static_pages#comp'
        
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
