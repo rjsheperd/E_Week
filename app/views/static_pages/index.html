@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html>
   <% content_for :head do %>
-    <div class="image" id="banner"><img src="assets/banner.png" style="margin-left:200px;margin-top:40px" onclick='changeImage(assets/speaker.png)'>
+    <div class="image"><img id="banner" src="assets/banner.png" style="margin-left:200px;margin-top:40px">
       <h1>Weeklong engineering activities to enjoy the sunshine!</h1>
     </div>
   <% end %>
 
   <%= render 'layouts/header' %>
   <div id="loadedPage"></div>
-
-  <script type="text/javascript">
-    function changeImage(img) {
-      $('#banner').attr('src', img);
-    }
-  </script>
-
-
 
 </html>
