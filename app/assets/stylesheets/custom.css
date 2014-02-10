@@ -7,18 +7,12 @@ body {
 }
 
 .text {
-    background-color: #99ccff;
-    border-radius: 20px;
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    border: 2px solid #66CCCC;
     height: auto;
-    margin-top: 150px;
+    margin-top: 460px;
     margin-bottom: 10px;
-    padding-bottom: 10px;
     font-family: 'Droid Sans', sans-serif;
-    color: #FFFFFF;
-    text-shadow: 3px 2px 8px #6296F0;
+    color: #000000;
+    margin-left: 200px;
 }
 
 h1 {
@@ -32,7 +26,6 @@ h1 {
 }
 
 h2 {
-    
 }
 
 
@@ -44,7 +37,7 @@ p {
     font-family: 'Droid Sans', sans-serif;
 }
 
-div.image {
+.image {
     background-repeat: no-repeat;
     background-position: center;
     width: 900px;
@@ -54,13 +47,59 @@ div.image {
     -webkit-border-radius: 40px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     padding-right: auto;
     padding-left: auto;
     float: center;
     background-color: #3366CC;
 }
 
+.image > h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 185px;
+    margin-bottom: 0px;
+}
+
+.image > h2 {
+    padding-top: 140px;
+    padding-left: 250px;
+    margin-bottom: 0px;
+    font-weight: normal;
+    font-size: 26px;
+}
+
+.image > h3 {
+    font-weight: normal;
+    font-size: 22px;
+    padding-left: 450px;
+    margin-top: -10px;
+}
+
+.image > h4 {
+}
+
+.image > p {
+    margin-top: 160px;
+    margin-left: 40px;
+    font-weight: normal; 
+    font-size: 18px;
+}
+
+.icon {
+    border: 3.5px solid #3366CC;
+    height: 100px;
+    width: 100px;
+    float: center;
+}
+
+.icon > p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 115px;
+    width: 840px;
+    line-height: 20px;
+}
 .nav {
     margin-left: auto;
     margin-right: auto;

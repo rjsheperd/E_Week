@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
+  <% content_for :head do %>
+    <div class="image"><img src="assets/meet.png" style="margin-left:200px;margin-top:40px" onclick='changeImage(assets/speaker.png)'>
+      <h1>Weeklong engineering activities to enjoy the sunshine!</h1>
+    </div>
+  <% end %>
 
-    <h2>Speakers</h2>
-    <h3>Keynote</h3>
-    <b>When?</b>Monday 3/10<br>
-    <b>Where?</b>Place<br>
-        <b>Questions?</b> Contact at berkeley.edu
-    <h3>Ted Talk</h3>
-    Hi  
+  <script type="text/javascript">
+	$().ready(function() {
+		$(".image").show();
+	});
+  </script>
 
+
+	<div class="text">
+		<h2>Speakers</h2>
+	    <h3>Keynote</h3>
+	    <div class="icon">
+		    <p><b>When?</b> Monday 3/10<br></p>
+		    <p><b>Where?</b> Place <br></p>
+		    <p><b>What?</b> TALK YAY<br></p>
+		</div>
+	    <b>Questions?</b> Contact at berkeley.edu
+	    <h3>Ted Talk</h3>
+	</div>
 </html>

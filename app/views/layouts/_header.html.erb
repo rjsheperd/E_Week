@@ -3,19 +3,21 @@
 <script type="text/javascript" src="http://tympanus.net/Development/Arctext/js/jquery.arctext.js"></script>
 <script>
 	$().ready(function() {
-	$('#speakerCurve').arctext({radius: 55});
-	$('#profdevCurve').arctext({radius: 50});
-	$('#outreachCurve').arctext({radius: 60});
-	$('#meetCurve').arctext({radius: 50});
-	$('#eatCurve').arctext({radius: 55, dir: -1});
-	$('#profCurve').arctext({radius: 60});
-	$('#devCurve').arctext({radius: 60, dir: -1});
-	$('#compCurve').arctext({radius: 70});
-});
+  	$('#speakerCurve').arctext({radius: 55});
+  	$('#profdevCurve').arctext({radius: 50});
+  	$('#outreachCurve').arctext({radius: 60});
+  	$('#meetCurve').arctext({radius: 50});
+  	$('#eatCurve').arctext({radius: 55, dir: -1});
+  	$('#profCurve').arctext({radius: 60});
+  	$('#devCurve').arctext({radius: 60, dir: -1});
+  	$('#compCurve').arctext({radius: 70});
+  });
 
 function load(obj) {
   $("#loadedPage").load(obj.getAttribute("href").substring(1) + ".html");
+  $(".image").hide();
 }
+
 </script>
 
 <%= yield :head %>
