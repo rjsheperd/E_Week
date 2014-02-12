@@ -15,6 +15,7 @@
 
 function load(obj) {
   $("#loadedPage").load(obj.getAttribute("href").substring(1) + ".html");
+  $("#" + obj.getAttribute("href").substring(1)).style.opacity = "1.0";
   document.getElementById("banner").src = "assets/" + obj.getAttribute("href").substring(1) + "B.png";
 }
 
@@ -24,8 +25,8 @@ function load(obj) {
 
 <div class="navbar" style="margin-left:600px;margin-top:-450px">
   <u1 class="nav">
-    <li><a href="#speaker" onclick="load(this)"><img src="img/speaker.png">
-        <div id="speakerCurve" style="margin-top:-150px;margin-left:30px">S P E A K E R S</div>
+    <li><a href="#speaker" onclick="load(this)"><img src="img/speaker.png" onclick="changeOpacity(this)">
+        <div id="speakerCurve" style="margin-top:-150px;margin-left:30px">S P E A K E R</div>
     </a></li>
   </u1>
 </div>
