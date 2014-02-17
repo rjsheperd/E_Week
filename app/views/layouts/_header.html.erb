@@ -14,9 +14,28 @@
   });
 
 function load(obj) {
-  $("#loadedPage").load(obj.getAttribute("href").substring(1) + ".html");
-  $("#" + obj.getAttribute("href").substring(1)).style.opacity = "1.0";
-  document.getElementById("banner").src = "assets/" + obj.getAttribute("href").substring(1) + "B.png";
+    $("#loadedPage").load(obj.getAttribute("href").substring(1) + ".html");
+    var text = obj.getAttribute("href").substring(1);
+    var activity = "<h4>- - ";
+    if (text === "speaker") {
+        text = "Speaker";
+        activity += "Keynote<br>&nbsp  - - Ted Talk";
+    } else if (text === "outreach") {
+        text = "Outreach";
+        activity += "Engineering for Kids";
+    } else if (text === "meet") {
+        text = "Meet and Eat";
+        activity += "Breakfasts<br>&nbsp  - - Showcases";
+    } else if (text === "compete") {
+        text = "Compete";
+        activity += "Puzzle Hunt<br>&nbsp  - - Engineering Design<br>- - Duct Tape";
+    }
+    document.getElementById("banner").innerHTML = '<h2>' + text + '</h2><h1>Weeklong engineering activities to enjoy the sunshine!</h1>' + activity + "</h4>";
+    if (text === "profdev") {
+        activity = '<h4 style="margin-top:-200px">  - - Workshops<br>&nbsp- - Network';
+        text = "Professional<br>&nbsp&nbsp&nbsp Development";
+        document.getElementById("banner").innerHTML = '<h2>' + text + '</h2><h1 style="margin-top:-200px;">Weeklong engineering activities to enjoy the sunshine!</h1>' + activity + "</h4>";
+    }
 }
 
 </script>
@@ -57,7 +76,7 @@ function load(obj) {
   </u1>
 </div>
 
-<div class="navbar" style="padding-left:200px;padding-top:175px">
+<div class="navbar" style="padding-left:300px;padding-top:175px">
   <u1 class="nav">
   <li><a href="#compete" onclick="load(this)"><img src="img/compete.png">
       <div id="compCurve" style="margin-top:-148px;margin-left:30px">C O M P E T E</div>
