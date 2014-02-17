@@ -8,7 +8,7 @@ body {
 
 .text {
     height: auto;
-    margin-top: 460px;
+    margin-top: 200px;
     margin-bottom: 10px;
     font-family: 'Droid Sans', sans-serif;
     color: #000000;
@@ -16,13 +16,18 @@ body {
 }
 
 .col1 {
-    margin-right: 635px;
-
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 705px;
+    width: 350px;
 }
 
 .col2 {
-    margin-left: 455px;
-    margin-top: -366px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -378px;
+    padding-left: 150px;
+    width: 350px;
 }
 
 h1 {
@@ -67,29 +72,22 @@ p {
 }
 
 .icon > p {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 10px;
     margin-left: 115px;
     width: 840px;
-    line-height: 20px;
+    line-height: 12px;
 }
+
 .nav {
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    float: center;
-    height: 50px;
 }
 
 .navbar {
-    float: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: 840px;
+    width: 100px;
 }
 
 .navbar .nav > li > a {
