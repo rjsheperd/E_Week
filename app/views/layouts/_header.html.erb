@@ -28,13 +28,13 @@ function load(obj) {
         activity += "Breakfasts<br>&nbsp  - - Showcases";
     } else if (text === "compete") {
         text = "Compete";
-        activity += "Puzzle Hunt<br>&nbsp  - - Engineering Design<br>- - Duct Tape";
+        activity += "Puzzle Hunt<br>&nbsp- - Build & Design<br>- - Duct Tape";
     }
     document.getElementById("banner").innerHTML = '<h2>' + text + '</h2><h1>Weeklong engineering activities to enjoy the sunshine!</h1>' + activity + "</h4>";
     if (text === "profdev") {
-        activity = '<h4 style="margin-top:-200px">  - - Workshops<br>&nbsp- - Network';
-        text = "Professional<br>&nbsp&nbsp&nbsp Development";
-        document.getElementById("banner").innerHTML = '<h2>' + text + '</h2><h1 style="margin-top:-205px;">Weeklong engineering activities to enjoy the sunshine!</h1>' + activity + "</h4>";
+        activity = '<h4 style="margin-top:-190px">  - - Workshops<br>&nbsp- - Network';
+        text = "Professional<br>&nbsp&nbsp&nbsp&nbsp Development";
+        document.getElementById("banner").innerHTML = '<h2 style="line-height:46px;">' + text + '</h2><h1 style="margin-top:-210px;">Weeklong engineering activities to enjoy the sunshine!</h1>' + activity + "</h4>";
     }
 }
 
