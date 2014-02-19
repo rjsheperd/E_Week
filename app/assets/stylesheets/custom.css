@@ -126,11 +126,18 @@ p {
     opacity: 1;
 }
 
-.brand {
-    font-family: 'Droid Sans', sans-serif;
-    color: #6699FF;
-    font-size: 40px;
-    margin-top: 20px;
-    margin-left: 170px;
-    display: block;
+.footer {
+    border-top: 1px solid #3366CC;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 900px;
+    float: center;
+    color: #3366CC;
+} 
+
+.footer > h1 {
+    float: right;
+    margin-top: -345px;
+    margin-right: 0px;
 }
