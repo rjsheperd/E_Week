@@ -19,26 +19,54 @@ function load(obj) {
     var activity = "<h4>- - ";
     if (text === "speaker") {
         text = "Speaker";
-        activity += "Keynote<br>&nbsp  - - Ted Talk";
+        activity += "Dean Drako Kickoff<br>&nbsp  - - Innovations in Engineering";
     } else if (text === "outreach") {
         text = "Outreach";
         activity += "Engineering for Kids";
     } else if (text === "meet") {
         text = "Meet and Eat";
-        activity += "Breakfasts<br>&nbsp  - - Showcases";
+        activity += "Milk and Cookies<br>&nbsp - - Showcases<br> - - Breakfast<br>&nbsp - - Carnival<br>- - Casino Night";
     } else if (text === "compete") {
         text = "Compete";
-        activity += "Puzzle Hunt<br>&nbsp- - Build & Design<br>- - Duct Tape";
+        activity += "Puzzle Hunt<br>&nbsp- - Build & Design<br>- - Duct Taping";
     }
     document.getElementById("banner").innerHTML = '<h2>' + text + '</h2><h1>Weeklong engineering activities to enjoy the sunshine!</h1>' + activity + "</h4>";
     if (text === "profdev") {
-        activity = '<h4 style="margin-top:-190px">  - - Workshops<br>&nbsp- - Network';
+        activity = '<h4 style="margin-top:-190px">- - Networking';
         text = "Professional<br>&nbsp&nbsp&nbsp&nbsp Development";
         document.getElementById("banner").innerHTML = '<h2 style="line-height:46px;">' + text + '</h2><h1 style="margin-top:-210px;">Weeklong engineering activities to enjoy the sunshine!</h1>' + activity + "</h4>";
     }
 }
 
 </script>
+
+<div class="calendar">
+    <ul style="margin-left:100px;">&nbspMon
+        <h1 style="padding-top:115px;">Milk and Cookies</h1>
+        <h1 style="padding-top:121px;">Dean Drako Talk</h1>
+        <h1 style="padding-top:121px;">Showcases</h1>
+    </ul>
+    <ul style="margin-left:-56px;">&nbspTues
+        <h1 style="padding-top:115px;">Innovations Talk</h1>
+        <h1 style="padding-top:121px;">Puzzle Hunt</h1>
+        <h1 style="padding-top:121px;">Breakfast<h1>
+    </ul>
+    <ul style="margin-left:-56px">&nbspWed
+        <h1 style="padding-top:134px;padding-left:28px;">Networking Event</h1>
+    </ul>
+    <ul style="margin-left:-56px">&nbspThurs
+        <h1 style="padding-top:115px;padding-left:46px;">Innovations Talk</h1>
+        <h1 style="padding-top:121px;padding-left:46px;">Duct Taping</h1>
+        <h1 style="padding-top:121px;padding-left:46px;">Breakfast<h1>
+    </ul>
+    <ul style="margin-left:-48px;">&nbspFri
+        <h1 style="padding-top:115px;padding-left:8px;">Carnival</h1>
+        <h1 style="padding-top:121px;padding-left:8px;">Casino Night</h1>
+    </ul>
+    <ul style="margin-left:-110px;width:90px;border-right: 3px solid #99CCFF;">&nbspSat
+        <h1 style="padding-top:134px;padding-left:14px;">E4K</h1>
+    </ul>
+</div>
 
 <%= yield :head %>
 
@@ -76,7 +104,7 @@ function load(obj) {
   </u1>
 </div>
 
-<div class="navbar" style="padding-left:300px;padding-top:175px">
+<div class="navbar" style="padding-left:315px;padding-top:178px">
   <u1 class="nav">
   <li><a href="#compete" onclick="load(this)"><img src="assets/compete.png">
       <div id="compCurve" style="margin-top:-148px;margin-left:30px">C O M P E T E</div>
