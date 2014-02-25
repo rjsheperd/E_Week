@@ -67,7 +67,7 @@ p {
 .calendar {
     background-color: #3366CC;
     height: 80px;
-    margin-top: 30px;
+    float: center;
 }
 
 .calendar > ul {
@@ -75,13 +75,14 @@ p {
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
-    color: #99CCFF;
+    color: #FFCC00;
     font-size: 26px;
     padding-top: 30px;
     border-left: 3px solid #99CCFF;
     height: 63%;
     vertical-align: middle;
     float: left;
+    opacity: .6;
 }
 
 .calendar > ul > h1 {
