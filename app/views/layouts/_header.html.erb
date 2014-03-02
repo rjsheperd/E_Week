@@ -19,7 +19,7 @@ function load(obj) {
     var activity = "<h4>- - ";
     if (text === "speaker") {
         text = "Speaker";
-        activity += "Dean Drako Kickoff<br>&nbsp  - - Closing Remarks";
+        activity += "Dean Drako Kickoff<br>&nbsp  - - Innovations in Engineering<br>- - Closing Remarks";
     } else if (text === "outreach") {
         text = "Outreach";
         activity += "Engineering for Kids";
@@ -27,14 +27,14 @@ function load(obj) {
         text = "Meet and Eat";
         activity += "Milk and Cookies<br>&nbsp - - Showcases<br> - - Breakfast<br>&nbsp - - Carnival<br>- - Casino Night";
     } else if (text === "compete") {
-        text = "Compete";
+	text = "Compete";
         activity += "Puzzle Hunt<br>&nbsp- - Build & Design<br>- - Duct Taping";
     }
-    document.getElementById("banner").innerHTML = '<h2>' + text + '</h2><h1>Weeklong engineering activities to enjoy the sunshine!</h1>' + activity + "</h4>";
+    document.getElementById("banner").innerHTML = '<h2>' + text + '</h2><h1>Weeklong activities to celebrate engineering, not study, and to enjoy the sunshine!</h1>' + activity + "</h4>";
     if (text === "profdev") {
         activity = '<h4 style="margin-top:-190px">- - Networking';
         text = "Professional<br>&nbsp&nbsp&nbsp&nbsp Development";
-        document.getElementById("banner").innerHTML = '<h2 style="line-height:46px;">' + text + '</h2><h1 style="margin-top:-210px;">Weeklong engineering activities to enjoy the sunshine!</h1>' + activity + "</h4>";
+        document.getElementById("banner").innerHTML = '<h2 style="line-height:46px;">' + text + '</h2><h1 style="margin-top:-217px;">Weeklong activities to celebrate engineering, not study, and to enjoy the sunshine!</h1>' + activity + "</h4>";
     }
 }
 
@@ -104,7 +104,7 @@ function load(obj) {
   </u1>
 </div>
 
-<div class="navbar" style="padding-left:315px;padding-top:178px">
+<div class="navbar" style="padding-left:328px;padding-top:178px">
   <u1 class="nav">
   <li><a href="#compete" onclick="load(this)"><img src="assets/compete.png">
       <div id="compCurve" style="margin-top:-148px;margin-left:30px">C O M P E T E</div>
