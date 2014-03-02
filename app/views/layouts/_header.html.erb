@@ -19,7 +19,7 @@ function load(obj) {
     var activity = "<h4>- - ";
     if (text === "speaker") {
         text = "Speaker";
-        activity += "Dean Drako Kickoff<br>&nbsp  - - Closing Remarks";
+        activity += "Dean Drako Kickoff<br>&nbsp  - - Innovations in Engineering<br>- - Closing Remarks";
     } else if (text === "outreach") {
         text = "Outreach";
         activity += "Engineering for Kids";
@@ -27,14 +27,14 @@ function load(obj) {
         text = "Meet and Eat";
         activity += "Milk and Cookies<br>&nbsp - - Showcases<br> - - Breakfast<br>&nbsp - - Carnival<br>- - Casino Night";
     } else if (text === "compete") {
-        text = "Compete";
+	text = "Compete";
         activity += "Puzzle Hunt<br>&nbsp- - Build & Design<br>- - Duct Taping";
     }
-    document.getElementById("banner").innerHTML = '<h2>' + text + '</h2><h1>Weeklong engineering activities to enjoy the sunshine!</h1>' + activity + "</h4>";
+    document.getElementById("banner").innerHTML = '<h2>' + text + '</h2><h1>Weeklong activities to celebrate engineering, not study, and to enjoy the sunshine!</h1>' + activity + "</h4>";
     if (text === "profdev") {
         activity = '<h4 style="margin-top:-190px">- - Networking';
         text = "Professional<br>&nbsp&nbsp&nbsp&nbsp Development";
-        document.getElementById("banner").innerHTML = '<h2 style="line-height:46px;">' + text + '</h2><h1 style="margin-top:-210px;">Weeklong engineering activities to enjoy the sunshine!</h1>' + activity + "</h4>";
+        document.getElementById("banner").innerHTML = '<h2 style="line-height:46px;">' + text + '</h2><h1 style="margin-top:-217px;">Weeklong activities to celebrate engineering, not study, and to enjoy the sunshine!</h1>' + activity + "</h4>";
     }
 }
 
@@ -57,9 +57,10 @@ function load(obj) {
     </ul>
     <ul style="margin-left:-56px">&nbspThurs
         <h1 style="padding-top:115px;padding-left:46px;">Duct Taping</h1>
+        <h1 style="padding-top:121px;padding-left:46px;">Engineer Design</h1>
         <h1 style="padding-top:121px;padding-left:46px;">Closing Remarks</h1>
     </ul>
-    <ul style="margin-left:-48px;">&nbspFri
+    <ul style="margin-left:-40px;">&nbspFri
         <h1 style="padding-top:115px;padding-left:8px;">Carnival</h1>
         <h1 style="padding-top:121px;padding-left:8px;">Casino Night</h1>
     </ul>
@@ -70,15 +71,15 @@ function load(obj) {
 
 <%= yield :head %>
 
-<div class="navbar" style="padding-left:100px;margin-top:-450px">
+<div class="navbar" style="padding-left:100px;margin-top:-450px;">
   <u1 class="nav">
     <li><a href="#speaker" onclick="load(this)"><img src="assets/speaker.png" onclick="changeOpacity(this)">
-        <div id="speakerCurve" style="margin-top:-150px;margin-left:30px">S P E A K E R</div>
+  	<div id="speakerCurve" style="margin-top:-150px;margin-left:30px"></div>
     </a></li>
   </u1>
 </div>
 
-<div class="navbar" style="padding-right:700px;padding-top:50px">
+<div class="navbar" style="padding-right:700px;padding-top:50px;">
   <u1 class="nav">
   <li><a href="#profdev" onclick="load(this)"><img src="assets/profdev.png">
       <div id="profCurve" style="margin-top:-150px;margin-left:25px">PROFESSIONAL</div>
@@ -87,15 +88,15 @@ function load(obj) {
   </u1>
 </div>
 
-<div class="navbar" style="padding-left:550px">
+<div class="navbar" style="padding-left:550px;">
   <u1 class="nav">
   <li><a href="#outreach" onclick="load(this)"><img src="assets/network.png">
-      <div id="outreachCurve" style="margin-top:-149px;margin-left:22px">O U T R E A C H</div>
+	<div id="outreachCurve" style="margin-top:-149px;margin-left:22px"></div>
   </a></li>
   </u1>
 </div>
 
-<div class="navbar" style="padding-right:450px">
+<div class="navbar" style="padding-right:450px;padding-top:100px;">
   <u1 class="nav">
   <li><a href="#meet" onclick="load(this)"><img src="assets/meet.png">
       <div id="meetCurve" style="margin-top:-150px;margin-left:50px">M E E T</div>
@@ -104,10 +105,10 @@ function load(obj) {
   </u1>
 </div>
 
-<div class="navbar" style="padding-left:315px;padding-top:178px">
+<div class="navbar" style="padding-left:336px;padding-top:50px;">
   <u1 class="nav">
   <li><a href="#compete" onclick="load(this)"><img src="assets/compete.png">
-      <div id="compCurve" style="margin-top:-148px;margin-left:30px">C O M P E T E</div>
+      <div id="compCurve" style="margin-top:-148px;margin-left:30px"></div>
   </a></li>
   </u1>
 </div>
